@@ -24,7 +24,7 @@ def scrape():
 
 
 #update the database
-.update_one(query_parameter, {"$set": data}, options)
+   mars.update_one({}, {"$set":mars_data}, upsert=True)
 
 
 if __name__ == "__main__":
